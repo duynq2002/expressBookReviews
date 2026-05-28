@@ -1,0 +1,5 @@
+curl "http://localhost:5000/author/Chinua%20Achebe"
+[{"author":"Chinua Achebe","title":"Things Fall Apart","reviews":{}}]
+
+curl "http://localhost:5000/author/Chinua%20Acheb"
+{"message":"Books by this author not found"}

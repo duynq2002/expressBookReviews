@@ -1,0 +1,15 @@
+curl -X POST http://localhost:5000/customer/login \
+   -H "Content-Type: application/json" \
+   -d '{"username":"yourUsername","password":"yourPassword"}' \
+   -c cookies.txt
+{"message":"Login successful"}
+
+curl -X POST http://localhost:5000/customer/login \
+   -H "Content-Type: application/json" \
+   -d '{"username":"yourUsername","password":""}'
+{"message":"Username and password are required"}
+
+curl -X POST http://localhost:5000/customer/login \
+  -H "Content-Type: application/json" \
+  -d '{"username":"yourUsername","password":"yourPasswor"}'
+{"message":"Invalid username or password"}

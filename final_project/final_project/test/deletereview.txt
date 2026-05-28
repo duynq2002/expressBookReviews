@@ -1,0 +1,5 @@
+$ curl -X DELETE http://localhost:5000/customer/auth/review/1  -b cookies1.txt
+{"message":"Deleted review successfully"}
+
+$ curl http://localhost:5000/isbn/1
+{"author":"Chinua Achebe","title":"Things Fall Apart","reviews":{"user1":"This book was great!"}}
