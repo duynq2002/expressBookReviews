@@ -3,9 +3,9 @@ curl -X PUT http://localhost:5000/customer/auth/review/1 \
   -d '{
     "username": "yourUsername",
     "review": "This book was excellent!"
-  }' \
-  -c cookies.txt
-{"message":"Review added/updated successfully"}
+  }'
+
+{"message":"Review added/updated successfully","reviews":{"yourUsername":"This book was excellent!","Nguyen":"This book was okt!"}}
 
 $ curl http://localhost:5000/isbn/1
 {"author":"Chinua Achebe","title":"Things Fall Apart","reviews":{"user1":"This book was excellent!"}}
